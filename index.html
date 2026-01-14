@@ -19,11 +19,6 @@
     <meta property="og:description" content="Sinan Demir ile modern sigorta çözümleri. Hemen en uygun teklifi alın.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Side Sigorta | Güvenin Adresi">
-    <meta property="twitter:description" content="Sinan Demir ile modern sigorta çözümleri.">
-
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='6' fill='%232563eb'/><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M9 12l2 2 4-4' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,25 +28,10 @@
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
-        /* Custom scrollbar for a premium feel */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 5px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        .glass {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 <script type="importmap">
 {
@@ -67,5 +47,7 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
+    <!-- Entry point for the application -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
