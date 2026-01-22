@@ -50,42 +50,42 @@ const INSURANCE_DETAILS: Record<string, InsuranceDetail> = {
     title: 'Kasko & Trafik Sigortası',
     longDescription: 'Aracınızın uğrayabileceği hasarlara karşı tam güvence sağlıyoruz. Kasko sigortası ile çarpma, çarpışma, yanma, hırsızlık gibi ana teminatların yanı sıra mini onarım, yol yardım ve ikame araç gibi ek hizmetlerle konforunuzu koruyoruz.',
     features: ['7/24 Yol Yardım Hizmeti', 'İkame Araç Desteği', 'Orijinal Yedek Parça Garantisi', 'Sınırsız İhtiyari Mali Mesuliyet Seçeneği'],
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1200'
   },
   saglik: {
     id: 'saglik',
     title: 'Tamamlayıcı Sağlık Sigortası',
     longDescription: 'SGK ile anlaşmalı özel hastanelerde muayene, tahlil ve ameliyat gibi hizmetlerden hiçbir fark ücreti ödemeden yararlanmanızı sağlıyoruz. Sadece sağlık değil, check-up ve diş paketi gibi ek faydalarla yanınızdayız.',
     features: ['Yatarak ve Ayakta Tedavi', 'Doğum Teminatı Opsiyonu', 'Ücretsiz Check-up Paketi', '0-80 Yaş Arası Kapsam'],
-    image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&q=80&w=1200'
   },
   konut: {
     id: 'konut',
     title: 'Konut & DASK Sigortası',
     longDescription: 'Eviniz sadece dört duvar değil, sizin dünyanız. Yangın, sel, hırsızlık ve deprem (DASK) risklerine karşı evinizi ve eşyalarınızı piyasa değerleri üzerinden güvence altına alıyoruz.',
     features: ['Eşya Teminatı', 'Çilingir ve Tesisat Hizmetleri', 'Kira Kaybı Koruması', 'Elektronik Cihaz Sigortası'],
-    image: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&q=80&w=1200'
   },
   hayat: {
     id: 'hayat',
     title: 'Hayat Sigortası',
     longDescription: 'Sevdiklerinizin geleceğini teminat altına alın. Hayat sigortası ile beklenmedik durumlarda ailenizin yaşam standartlarını koruyor, dilerseniz birikimli hayat sigortası ile geleceğe yatırım yapmanızı sağlıyoruz.',
     features: ['Yüksek Teminat Limitleri', 'Vergi Avantajı İmkanı', 'Kritik Hastalıklar Koruması', 'Eğitim Sigortası Seçeneği'],
-    image: 'https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&q=80&w=1200'
   },
   seyahat: {
     id: 'hayat',
     title: 'Seyahat Sağlık Sigortası',
     longDescription: 'Yurt dışı seyahatlerinizde oluşabilecek sağlık sorunlarını dert etmeyin. Schengen vizesi ve diğer tüm vize işlemleri için geçerli, geniş kapsamlı seyahat sağlık poliçelerimizle güvendesiniz.',
     features: ['Tıbbi Tedavi Teminatı', 'Vefat ve Sürekli Sakatlık', 'Bagaj Kaybolması Desteği', 'Asistans Hizmetleri'],
-    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109c7f3?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&q=80&w=1200'
   },
   isyeri: {
     id: 'isyeri',
     title: 'İş Yeri Sigortası',
     longDescription: 'İş yerinizdeki demirbaşlardan stoklara, bina kıymetinden çalışanlarınızın sorumluluklarına kadar tüm riskleri tek bir poliçede topluyoruz. İş durması teminatı ile beklenmedik durumlarda kazancınızı koruyoruz.',
     features: ['İş Durması Teminatı', 'Üçüncü Şahıs Sorumluluk', 'Cam Kırılması', 'Makine Kırılması'],
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200'
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200'
   }
 };
 
@@ -202,6 +202,14 @@ const App: React.FC = () => {
                 onClick={() => navigateTo('insurance-detail', service.id)}
                 className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 cursor-pointer"
               >
+                <div className="mb-6 overflow-hidden rounded-2xl">
+                  <img
+                    src={service.image}
+                    alt={`${service.title} görseli`}
+                    className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
                 <div className={`w-16 h-16 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                   {service.icon}
                 </div>
@@ -499,6 +507,14 @@ const App: React.FC = () => {
                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                  {SERVICES.map((s) => (
                     <div key={s.id} onClick={() => navigateTo('insurance-detail', s.id)} className="p-8 rounded-3xl border border-slate-200 hover:border-blue-300 hover:shadow-xl transition-all cursor-pointer bg-white group">
+                      <div className="mb-6 overflow-hidden rounded-2xl">
+                        <img
+                          src={s.image}
+                          alt={`${s.title} görseli`}
+                          className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      </div>
                       <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">{s.icon}</div>
                       <h4 className="text-xl font-bold mb-3">{s.title}</h4>
                       <p className="text-slate-600 mb-6">{s.description}</p>

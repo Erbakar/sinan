@@ -26,6 +26,7 @@ export const SERVICES: Service[] = [
     id: 'kasko',
     title: 'Kasko & Trafik',
     description: 'Aracınız için en kapsamlı koruma seçenekleri ve zorunlu trafik sigortasında en uygun teklifler.',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800',
     icon: <Car className="w-8 h-8" />,
     color: 'blue'
   },
@@ -33,6 +34,7 @@ export const SERVICES: Service[] = [
     id: 'saglik',
     title: 'Tamamlayıcı Sağlık',
     description: 'SGK anlaşmalı özel hastanelerde fark ücreti ödemeden muayene ve tedavi imkanı.',
+    image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=800',
     icon: <HeartPulse className="w-8 h-8" />,
     color: 'emerald'
   },
@@ -40,6 +42,7 @@ export const SERVICES: Service[] = [
     id: 'konut',
     title: 'Konut & DASK',
     description: 'Evinizi ve eşyalarınızı yangından hırsızlığa kadar her türlü riske karşı güvence altına alın.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&q=80&w=800',
     icon: <Home className="w-8 h-8" />,
     color: 'amber'
   },
@@ -47,6 +50,7 @@ export const SERVICES: Service[] = [
     id: 'hayat',
     title: 'Hayat Sigortası',
     description: 'Sevdiklerinizin geleceğini teminat altına alın, birikimlerinizi profesyonelce yönetelim.',
+    image: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&q=80&w=800',
     icon: <Umbrella className="w-8 h-8" />,
     color: 'indigo'
   },
@@ -54,6 +58,7 @@ export const SERVICES: Service[] = [
     id: 'seyahat',
     title: 'Seyahat Sağlık',
     description: 'Yurt dışı seyahatlerinizde vize işlemleri için zorunlu ve kapsamlı sağlık güvencesi.',
+    image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&q=80&w=800',
     icon: <Plane className="w-8 h-8" />,
     color: 'sky'
   },
@@ -61,6 +66,7 @@ export const SERVICES: Service[] = [
     id: 'isyeri',
     title: 'İş Yeri Sigortası',
     description: 'İşletmenizi, demirbaşlarınızı ve sorumluluklarınızı tek bir poliçe ile koruyun.',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800',
     icon: <Briefcase className="w-8 h-8" />,
     color: 'rose'
   }
